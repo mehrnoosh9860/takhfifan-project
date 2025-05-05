@@ -39,4 +39,5 @@ a,
 
 body {
   direction: rtl;
+  @apply font-iran text-base;
 }
