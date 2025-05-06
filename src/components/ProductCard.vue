@@ -38,12 +38,13 @@
     </div>
 
     <!-- all suggestion link -->
-    <div
+    <router-link
+      :to="link || '#'"
       class="flex items-center justify-end text-xs text-blue-400 border-dashed border-t-2 border-gray-200 px-2 py-3"
     >
-      <span class="ml-2"> مشاهده همه پیشنهادها </span>
+      <span class="ml-2"> مشاهده پیشنهادها </span>
       <i class="fas fa-chevron-left pl-2"></i>
-    </div>
+    </router-link>
   </router-link>
 </template>
 

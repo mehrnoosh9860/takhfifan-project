@@ -2,14 +2,18 @@
   <div>
     <div class="flex flex-wrap items-center justify-between gap-4">
       <!-- Logo -->
-      <a href="#" class="flex-shrink-0" style="width: 120px">
-        <img src="@/assets/icons/main-logo.svg" alt="" class="h-10 w-auto" />
+      <a href="#" class="flex-shrink-0">
+        <img
+          src="@/assets/icons/main-logo.svg"
+          alt="لوگو"
+          class="w-24 sm:w-28 md:w-32 lg:w-36 h-auto object-contain"
+        />
       </a>
 
       <!-- Search Section -->
       <section
         id="search-section"
-        class="search-nav flex items-center border rounded-lg overflow-hidden flex-1 max-w-2xl ml-6"
+        class="search-nav flex items-center border rounded-lg overflow-hidden flex-1 max-w-2xl ml-6 hidden sm:flex"
       >
         <!-- City Selector -->
         <div class="relative flex-shrink-0 border-l border-gray-300">
@@ -54,7 +58,7 @@
           <p class="text-sm hidden sm:inline">ورود / ثبت نام</p>
         </section>
 
-        <div class="h-6 border-l border-gray-300 hidden sm:block"></div>
+        <div class="h-6 border-l border-gray-300"></div>
 
         <i class="fas fa-shopping-basket text-xl"></i>
       </div>

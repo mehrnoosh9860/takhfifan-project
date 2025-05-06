@@ -12,6 +12,14 @@
       <OffersSection title="استخرهای خفن" :items="shockingOffers" />
       <OffersSection title="رسنتوران‌های محبوب" :items="shockingOffers" />
       <OffersSection title="با 100 هزار تومان تفریح کن" :items="shockingOffers" />
+
+      <!-- Offline Cashback banner and stores -->
+      <OfflineCashback></OfflineCashback>
+
+      <!-- Remaining offers -->
+      <OffersSection title="بهترین مراکز دندون پزشکی" :items="shockingOffers" />
+      <OffersSection title="بوفه‌های صبحانه" :items="shockingOffers" />
+      <footer></footer>
     </div>
   </div>
 </template>
@@ -20,12 +28,16 @@
 import Header from '../components/Header.vue'
 import HeroSection from '../components/HeroSection.vue'
 import OffersSection from '../components/OffersSection.vue'
+import OfflineCashback from '@/components/OfflineCashback.vue'
+import footer from '@/components/footer.vue'
 
 export default {
   components: {
     Header,
     HeroSection,
     OffersSection,
+    footer,
+    OfflineCashback,
   },
   data() {
     return {
