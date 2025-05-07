@@ -3,7 +3,7 @@
     <!-- Section title -->
     <div class="flex justify-between">
       <h2 class="text-xl text-right mb-4">{{ title }}</h2>
-      <a href="#">مشاهده همه <i class="fas fa-chevron-left mr-2 text-sm"></i></a>
+      <a href="#" class="text-xs">مشاهده همه <i class="fas fa-chevron-left mr-2 text-xs"></i></a>
     </div>
 
     <!-- Scrollable row of cards -->

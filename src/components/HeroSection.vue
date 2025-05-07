@@ -33,7 +33,7 @@
     </div>
 
     <!-- Bottom banners -->
-    <div class="mt-4 flex justify-between flex-wrap mx-auto" style="max-width: 1383px">
+    <div class="mt-4 justify-between flex-wrap mx-auto lg:flex" style="max-width: 1383px">
       <router-link
         v-for="(promo, idx) in bottomBanners"
         :key="idx"

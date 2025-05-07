@@ -1,7 +1,8 @@
 <template>
   <div class="w-full">
     <div class="px-5 xl:px-8 py-4 mx-auto" style="max-width: 1440px">
-      <Header></Header>
+      <Header class="sticky top-0 z-50 bg-white shadow-sm pb-5"></Header>
+      <MainMenu></MainMenu>
       <HeroSection />
 
       <!-- Dynamic Offers Sections -->
@@ -20,6 +21,7 @@
       <OffersSection title="بهترین مراکز دندون پزشکی" :items="shockingOffers" />
       <OffersSection title="بوفه‌های صبحانه" :items="shockingOffers" />
       <footer></footer>
+      <Footer></Footer>
     </div>
   </div>
 </template>
@@ -29,15 +31,17 @@ import Header from '../components/Header.vue'
 import HeroSection from '../components/HeroSection.vue'
 import OffersSection from '../components/OffersSection.vue'
 import OfflineCashback from '@/components/OfflineCashback.vue'
-import footer from '@/components/footer.vue'
+import Footer from '@/components/Footer.vue'
+import MainMenu from '@/components/MainMenu.vue'
 
 export default {
   components: {
     Header,
     HeroSection,
     OffersSection,
-    footer,
     OfflineCashback,
+    Footer,
+    MainMenu,
   },
   data() {
     return {
