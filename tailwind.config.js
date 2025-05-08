@@ -7,6 +7,9 @@ export default {
         iran: ['"Vazirmatn"', 'sans-serif'],
       },
     },
+    maxWidth: {
+      'custom-container': '1440px',
+    },
   },
   plugins: [],
 }

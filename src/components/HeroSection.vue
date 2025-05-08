@@ -1,7 +1,7 @@
 <template>
-  <section class="pt-6 bg-gray-100">
+  <section class="pt-6">
     <!-- Top Banner Row -->
-    <div class="flex flex-col lg:flex-row gap-4 items-start mx-auto" style="max-width: 1383px">
+    <div class="flex flex-col lg:flex-row gap-4 items-start mx-auto" style="max-width: 1376px">
       <!-- Main banner -->
       <div class="w-full max-w-[1095px] aspect-[1095/376]">
         <swiper
@@ -33,7 +33,7 @@
     </div>
 
     <!-- Bottom banners -->
-    <div class="mt-4 flex justify-between flex-wrap mx-auto" style="max-width: 1383px">
+    <div class="mt-4 justify-between flex-wrap mx-auto lg:flex" style="max-width: 1383px">
       <router-link
         v-for="(promo, idx) in bottomBanners"
         :key="idx"
@@ -41,7 +41,7 @@
         class="rounded-xl overflow-hidden shadow-md mb-4"
         style="width: 263px"
       >
-        <img :src="promo.image" :alt="promo.title" class="w-full h-full object-cover" />
+        <img :src="promo.image" :alt="promo.title" class="w-full h-full object-cover mb-2" />
       </router-link>
     </div>
   </section>
