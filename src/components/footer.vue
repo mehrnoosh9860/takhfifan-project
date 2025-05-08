@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import SearchBar from './SearchBar.vue'
-</script>
-
 <template>
   <section>
     <!-- Subscribe and awards -->
@@ -11,7 +7,7 @@ import SearchBar from './SearchBar.vue'
       <!-- Title and Subtitle -->
       <div class="lg:text-right">
         <h3>از آخرین تخفیف‌ها مطلع باشید.</h3>
-        <p>بار وارد کردن ایمیل خود آخرین تخفیف‌های شهرتان را دریافت کنید</p>
+        <p class="text-xs">بار وارد کردن ایمیل خود آخرین تخفیف‌های شهرتان را دریافت کنید</p>
       </div>
 
       <!-- Email input -->
@@ -19,6 +15,7 @@ import SearchBar from './SearchBar.vue'
         placeholder="example@gmail.com"
         buttonText="اشتراک"
         buttonClass="bg-blue-500"
+        :hideIcon="true"
         class="max-w-[400px] max-h-[40px] mx-6 w-full sm:w-auto"
       ></SearchBar>
 
@@ -167,3 +164,17 @@ import SearchBar from './SearchBar.vue'
     </div>
   </section>
 </template>
+
+<script setup>
+import SearchBar from './SearchBar.vue'
+</script>
+
+<style scoped>
+.search-nav {
+  border-color: #459efa;
+}
+
+.search-icon {
+  display: none !important;
+}
+</style>

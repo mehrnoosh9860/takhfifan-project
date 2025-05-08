@@ -1,12 +1,12 @@
 <template>
-  <section class="mt-5">
+  <section class="mt-10">
     <!-- Section title -->
     <div class="flex justify-between">
       <h2 class="text-xl text-right mb-4">{{ title }}</h2>
-      <a href="#" class="text-xs">مشاهده همه <i class="fas fa-chevron-left mr-2 text-xs"></i></a>
+      <a href="#" class="text-sm">مشاهده همه <i class="fas fa-chevron-left mr-2 text-sm"></i></a>
     </div>
 
-    <!-- Scrollable row of cards -->
+    <!-- Scroll  cards -->
     <div class="relative">
       <!-- Left Chevron (Visible only on small screens) -->
       <button
@@ -19,7 +19,7 @@
       <!-- Scrollable Container -->
       <div
         ref="scrollContainer"
-        class="flex gap-4 overflow-x-auto pb-2 hide-scrollbar scroll-smooth"
+        class="flex gap-4 overflow-x-auto pt-2 hide-scrollbar scroll-smooth"
       >
         <ProductCard
           v-for="(item, idx) in items"

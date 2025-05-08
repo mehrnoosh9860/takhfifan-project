@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="flex flex-wrap items-center justify-between gap-4">
+  <div class="w-full flex justify-center px-4 py-2">
+    <div class="flex flex-wrap items-center justify-between gap-4 w-full max-w-[1376px]">
       <!-- Logo -->
       <a href="#" class="flex-shrink-0">
         <img
@@ -14,7 +14,7 @@
       <SearchBar
         placeholder="جستجو: رستوران، باشگاه انقلاب ..."
         buttonText=""
-        class="hidden md:flex"
+        class="hidden md:flex max-w-[600px]"
       ></SearchBar>
 
       <!-- Login and signup Section -->
@@ -29,9 +29,11 @@
         <i class="fas fa-shopping-basket text-xl"></i>
       </div>
     </div>
+  </div>
 
-    <!-- Searchbar only for SMALL SCREENS -->
-    <SearchBar placeholder="جستجو ..." buttonText="" class="md:hidden mt-3"></SearchBar>
+  <!-- Searchbar only for SMALL SCREENS -->
+  <div class="py-2 shadow-sm">
+    <SearchBar placeholder="جستجو ..." buttonText="" class="mx-5 md:hidden" />
   </div>
 </template>
 

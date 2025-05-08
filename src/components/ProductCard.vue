@@ -4,7 +4,7 @@
     class="block rounded-xl overflow-hidden shadow-md bg-white w-full max-w-[263px]"
   >
     <div class="relative w-full aspect-[5/3]">
-      <!-- Added aspect ratio container -->
+      <!-- Image of the offer -->
       <img :src="image" :alt="title" class="w-full h-full object-cover" />
 
       <!-- Sold number badge -->

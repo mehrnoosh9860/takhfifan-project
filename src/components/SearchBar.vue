@@ -31,7 +31,7 @@
 
     <!-- Search Button -->
     <button @click="performSearch" :class="['px-4 py-3 text-white flex-shrink-0', buttonClass]">
-      <i class="fas fa-search mr-1"></i>
+      <i v-if="!hideIcon" class="fas fa-search mr-1"></i>
       <span class="text-xs hidden sm:inline">{{ buttonText }}</span>
     </button>
   </section>
@@ -54,6 +54,7 @@ const props = defineProps({
     type: String,
     default: 'bg-pink-500 hover:bg-pink-600',
   },
+  hideIcon: { type: Boolean, default: false },
 })
 
 const selectedCity = ref('تهران')
