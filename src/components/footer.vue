@@ -162,6 +162,9 @@
         <div class="border border-gray-300 rounded-md w-20 h-20"></div>
       </div>
     </div>
+    <h2 class="flex justify-center align-center text-sm text-gray-600">
+      Designed By Mahan Intelligent Solution Holding @2025
+    </h2>
   </section>
 </template>
 
