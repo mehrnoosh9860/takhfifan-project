@@ -126,6 +126,12 @@
           <i class="fab fa-telegram text-xl"></i>
         </a>
       </div>
+       <!-- Design By -->
+      <div class="px-5 lg:border-r-2">
+        <p class="text-gray-500 text-sm">
+          Design by <span class="font-semibold">Mahan Intelligent Solution Holding</span>
+        </p>
+      </div>
     </div>
 
     <!-- Discription -->
